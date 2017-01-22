@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>code</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../lib/jquery-1.12.1.min.js"></script>
+    <script src="../js/signup.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="well well-lg col-sm-4 ">
+                <div class = "has-success" align='center'>
+                    <h4 class="control-label"><b>Registration Form<hr></b></h4>
+                </div>
+              <form  class="form-horizontal" align='center'>
+                    <div class="form-group">
+                        <div class="col-xs-11">
+                        <input type="text" id=name class="form-control input-lg" placeholder="Name" required>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <div class="col-xs-11">
+                            <input type="email" id="email" class="form-control input-lg" placeholder=" Email Address" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <div class="col-xs-11">
+                            <input type="password" id="password" class="form-control input-lg" placeholder="Password" required>
+                        </div>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-success btn-lg" id="register">Register</button>
+                    <br><br>
+              </form>
+            </div>
+            <div class="well well-lg col-sm-4  ">
+              <div class = "has-info" align='center'>
+                  <h4 class="control-label"><b>Score Board<hr></b></h4>
+              </div>
+              <form class="form-horizontal" align='center'>
+                    <div class="form-group">
+                        <div class="col-xs-11">
+                        <input type="text" id="uname" class="form-control input-lg" placeholder="User Name" required>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <div class="col-xs-11">
+                            <input type="text" id="ugame" class="form-control input-lg" placeholder="Game Name" required>
+                        </div>
+                    </div>
+                    <br><a href = "./result">
+                    <button type="submit" class="btn btn-info btn-lg" id="score" onsubmit="score();">Find Score</button>
+                    </a><hr>
+              </form>
+            </div>
+
+            <div class="well well-lg col-sm-4">
+                <div class = "has-info" align='center'>
+                    <h4 class="control-label"><b>Update Score<hr></b></h4>
+                </div>
+                <form class="form-horizontal" align='center'>
+                    <div class="form-group">
+                        <div class="col-xs-11">
+                            <input type="text" id="updateName" class="form-control input-lg" placeholder="User Name" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <div class="col-xs-11">
+                            <input type="text" id="updateGame" class="form-control input-lg" placeholder="Game Name" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <div class="col-xs-11">
+                            <input type="number" id="updateScore" class="form-control input-lg" placeholder="Update Score" required>
+                        </div>
+                    </div>
+                    <br>
+                    <a href = "./result">
+                        <button type="submit" class="btn btn-info btn-lg" id="Upscore" >Update Score</button>
+                    </a><hr>
+                </form>
+            </div>
+            <div class="well well-lg col-sm-4">
+                <div class = "has-info" align='center'>
+                    <h4 class="control-label"><b>Delete User<hr></b></h4>
+                </div>
+                <form class="form-horizontal" align='center'>
+                    <div class="form-group">
+                        <div class="col-xs-11">
+                            <input type="text" id="deleteName" class="form-control input-lg" placeholder="User Name" required>
+                        </div>
+                    </div>
+                    <br>
+                    <a href = "./result">
+                        <button type="submit" class="btn btn-info btn-lg" id="del" >Delete</button>
+                    </a><hr>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
